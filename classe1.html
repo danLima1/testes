@@ -1,0 +1,40 @@
+<script>
+
+    class Animal {
+        #nome = ''
+        #especie = ''
+        #familia
+        #nascimento
+        #metrica = {}
+
+        constructor(nome, especie) {
+            this.#nome = nome
+            this.#especie = especie
+            document.write('criando um bicho chamado ' + this.#nome + '<br>')
+        }
+
+        alimentacao() { }
+
+        vacinar() { }
+        get nome() {
+            return this.#nome
+
+        }
+        set nome(nome){
+        this.#nome = nome
+    }
+    get especie(){
+return this.#especie
+    }
+    set familia(familia){
+        this.#familia = familia
+    }
+    var foca = new Animal('Fofinha', 'mamífero')
+    foca.nome = 'Maria'
+    foca.especie = 'mamífero'
+    console.log(foca.nome)
+
+    var formiga = new Animal('Miguinha', 'artropode')
+    console.log(formiga)
+
+</script>
